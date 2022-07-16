@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED0828D3287664DE002AA86F /* PrivacyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0828D2287664DE002AA86F /* PrivacyApp.swift */; };
+		ED0828D5287664DE002AA86F /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0828D4287664DE002AA86F /* PrivacyView.swift */; };
+		ED0828D7287664E2002AA86F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0828D6287664E2002AA86F /* Assets.xcassets */; };
+		ED0828DA287664E2002AA86F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0828D9287664E2002AA86F /* Preview Assets.xcassets */; };
+		ED0828E128766777002AA86F /* PrivacyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0828E028766777002AA86F /* PrivacyButtonView.swift */; };
+		ED0828E328766C98002AA86F /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0828E228766C98002AA86F /* KeychainWrapper.swift */; };
+		ED0828E528779D9A002AA86F /* PrivacyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0828E428779D9A002AA86F /* PrivacyViewModel.swift */; };
+		ED29A9A1287F94D5001FAB5A /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29A9A0287F94D5001FAB5A /* SetPasswordView.swift */; };
+		ED34A4D5288247EB0074A647 /* PasswordVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED34A4D4288247EA0074A647 /* PasswordVerificationView.swift */; };
+		ED550E5E2880DEE700977018 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED550E5D2880DEE700977018 /* PopUpView.swift */; };
+		ED550E652880FAEF00977018 /* PrivacyTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED550E642880FAEF00977018 /* PrivacyTextFieldModifier.swift */; };
+		ED550E672880FB1B00977018 /* PrivacyShadowModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED550E662880FB1B00977018 /* PrivacyShadowModifier.swift */; };
+		ED550E6A288213AF00977018 /* ActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED550E69288213AF00977018 /* ActionsView.swift */; };
+		ED5B57D22878E7290054B456 /* UnlockPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B57D12878E7290054B456 /* UnlockPhotoView.swift */; };
+		ED9888BE28824DC4003A795C /* SetPasswordFocusField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9888BD28824DC4003A795C /* SetPasswordFocusField.swift */; };
+		ED9888C028825053003A795C /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9888BF28825053003A795C /* PhotoPicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED0828CF287664DE002AA86F /* Privacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Privacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED0828D2287664DE002AA86F /* PrivacyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyApp.swift; sourceTree = "<group>"; };
+		ED0828D4287664DE002AA86F /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		ED0828D6287664E2002AA86F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED0828D9287664E2002AA86F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED0828E028766777002AA86F /* PrivacyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyButtonView.swift; sourceTree = "<group>"; };
+		ED0828E228766C98002AA86F /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		ED0828E428779D9A002AA86F /* PrivacyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewModel.swift; sourceTree = "<group>"; };
+		ED29A9A0287F94D5001FAB5A /* SetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
+		ED34A4D4288247EA0074A647 /* PasswordVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVerificationView.swift; sourceTree = "<group>"; };
+		ED550E5D2880DEE700977018 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
+		ED550E642880FAEF00977018 /* PrivacyTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTextFieldModifier.swift; sourceTree = "<group>"; };
+		ED550E662880FB1B00977018 /* PrivacyShadowModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyShadowModifier.swift; sourceTree = "<group>"; };
+		ED550E69288213AF00977018 /* ActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsView.swift; sourceTree = "<group>"; };
+		ED5B57D12878E7290054B456 /* UnlockPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockPhotoView.swift; sourceTree = "<group>"; };
+		ED9888BD28824DC4003A795C /* SetPasswordFocusField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordFocusField.swift; sourceTree = "<group>"; };
+		ED9888BF28825053003A795C /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED0828CC287664DE002AA86F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED0828C6287664DE002AA86F = {
+			isa = PBXGroup;
+			children = (
+				ED0828D1287664DE002AA86F /* Privacy */,
+				ED0828D0287664DE002AA86F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED0828D0287664DE002AA86F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED0828CF287664DE002AA86F /* Privacy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED0828D1287664DE002AA86F /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				ED550E612880FAA500977018 /* Privacy */,
+				ED550E602880FA9000977018 /* Views */,
+				ED550E682880FB4D00977018 /* Modifiers */,
+				ED550E5F2880FA8800977018 /* Managers */,
+				ED0828D2287664DE002AA86F /* PrivacyApp.swift */,
+				ED0828D6287664E2002AA86F /* Assets.xcassets */,
+				ED0828D8287664E2002AA86F /* Preview Content */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		ED0828D8287664E2002AA86F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED0828D9287664E2002AA86F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ED550E5F2880FA8800977018 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				ED0828E228766C98002AA86F /* KeychainWrapper.swift */,
+				ED9888BD28824DC4003A795C /* SetPasswordFocusField.swift */,
+				ED0828E428779D9A002AA86F /* PrivacyViewModel.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		ED550E602880FA9000977018 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED0828E028766777002AA86F /* PrivacyButtonView.swift */,
+				ED34A4D4288247EA0074A647 /* PasswordVerificationView.swift */,
+				ED550E5D2880DEE700977018 /* PopUpView.swift */,
+				ED9888C1288253F1003A795C /* UIViewRepresentable */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED550E612880FAA500977018 /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				ED0828D4287664DE002AA86F /* PrivacyView.swift */,
+				ED550E69288213AF00977018 /* ActionsView.swift */,
+				ED5B57D12878E7290054B456 /* UnlockPhotoView.swift */,
+				ED29A9A0287F94D5001FAB5A /* SetPasswordView.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		ED550E682880FB4D00977018 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				ED550E662880FB1B00977018 /* PrivacyShadowModifier.swift */,
+				ED550E642880FAEF00977018 /* PrivacyTextFieldModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		ED9888C1288253F1003A795C /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				ED9888BF28825053003A795C /* PhotoPicker.swift */,
+			);
+			path = UIViewRepresentable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED0828CE287664DE002AA86F /* Privacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED0828DD287664E2002AA86F /* Build configuration list for PBXNativeTarget "Privacy" */;
+			buildPhases = (
+				ED0828CB287664DE002AA86F /* Sources */,
+				ED0828CC287664DE002AA86F /* Frameworks */,
+				ED0828CD287664DE002AA86F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Privacy;
+			productName = Privacy;
+			productReference = ED0828CF287664DE002AA86F /* Privacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED0828C7287664DE002AA86F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					ED0828CE287664DE002AA86F = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = ED0828CA287664DE002AA86F /* Build configuration list for PBXProject "Privacy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED0828C6287664DE002AA86F;
+			productRefGroup = ED0828D0287664DE002AA86F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED0828CE287664DE002AA86F /* Privacy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED0828CD287664DE002AA86F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0828DA287664E2002AA86F /* Preview Assets.xcassets in Resources */,
+				ED0828D7287664E2002AA86F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED0828CB287664DE002AA86F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED9888C028825053003A795C /* PhotoPicker.swift in Sources */,
+				ED29A9A1287F94D5001FAB5A /* SetPasswordView.swift in Sources */,
+				ED550E5E2880DEE700977018 /* PopUpView.swift in Sources */,
+				ED0828D5287664DE002AA86F /* PrivacyView.swift in Sources */,
+				ED0828E328766C98002AA86F /* KeychainWrapper.swift in Sources */,
+				ED0828E128766777002AA86F /* PrivacyButtonView.swift in Sources */,
+				ED9888BE28824DC4003A795C /* SetPasswordFocusField.swift in Sources */,
+				ED5B57D22878E7290054B456 /* UnlockPhotoView.swift in Sources */,
+				ED0828E528779D9A002AA86F /* PrivacyViewModel.swift in Sources */,
+				ED550E672880FB1B00977018 /* PrivacyShadowModifier.swift in Sources */,
+				ED0828D3287664DE002AA86F /* PrivacyApp.swift in Sources */,
+				ED550E652880FAEF00977018 /* PrivacyTextFieldModifier.swift in Sources */,
+				ED34A4D5288247EB0074A647 /* PasswordVerificationView.swift in Sources */,
+				ED550E6A288213AF00977018 /* ActionsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED0828DB287664E2002AA86F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED0828DC287664E2002AA86F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED0828DE287664E2002AA86F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Privacy/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ZH78K95TZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "In order to lock photos, enable biometrics.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "In order to add photos, we need access to your photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonrodriguez.Privacy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED0828DF287664E2002AA86F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Privacy/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ZH78K95TZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "In order to lock photos, enable biometrics.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "In order to add photos, we need access to your photos.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brandonrodriguez.Privacy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED0828CA287664DE002AA86F /* Build configuration list for PBXProject "Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED0828DB287664E2002AA86F /* Debug */,
+				ED0828DC287664E2002AA86F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED0828DD287664E2002AA86F /* Build configuration list for PBXNativeTarget "Privacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED0828DE287664E2002AA86F /* Debug */,
+				ED0828DF287664E2002AA86F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED0828C7287664DE002AA86F /* Project object */;
+}
