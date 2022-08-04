@@ -19,7 +19,7 @@
 - App Storage
 - Keychain
 - UIImagePicker
-- LocalAuthentication
+- Local Authentication
 
 ## Struggle
 This was my first time using Keychain and it was difficult to use at first because of its C type naming for properties. 
