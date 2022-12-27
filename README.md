@@ -16,6 +16,7 @@
 - Biometrics
 
 ## Tecnologies Used
+- SwiftUI
 - App Storage
 - Keychain
 - UIImagePicker
